@@ -1,4 +1,4 @@
-/*
+ /*
 
 Gradle provides built-in support for testing your applications. Core support
 is provided for JUnit and TestNG testing frameworks. To get started running

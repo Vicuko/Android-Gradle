@@ -29,6 +29,16 @@ apply plugin: 'java'
 
 task printDependencies {
     doLast {
-        configurations.compile.each { println it.name }
+        configurations.compileClasspath.each { println it.name }
     }
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation group: "se.l4.commons", name: "commons-serialization", version: "1.2.1"
+
+	implementation fileTree(dir:"libs", include: "*.jar") 
 }
