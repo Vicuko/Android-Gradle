@@ -19,4 +19,17 @@ solution file into this one.
 
 */
 
+plugins {
+    id 'java-library'
+    id 'application'
+}
+
+application {
+    mainClassName = 'com.udacity.gradle.JokeTeller'
+}
+
+//task runSolution(type: JavaExec){
+//    main = "com.udacity.gradle.JokeTeller"
+//    classpath = sourceSets.main.runtimeClasspath
+//}
 //apply from: "solution.gradle"

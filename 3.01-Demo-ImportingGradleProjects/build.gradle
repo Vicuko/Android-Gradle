@@ -12,6 +12,13 @@ task tellJoke {
     }
 }
 
+task tellAnotherJoke {
+    doLast {
+        println "How long does it take to master build tools?"
+        println "From the Gradle to the grave."
+    }
+}
+
 /*
 
 Let's import this project into Android Studio. Open Android Studio, and from
@@ -50,16 +57,13 @@ double clicking.
 
 Let's try adding a second task to our project.
 
-*/
 
-// task tellAnotherJoke {
-//     doLast {
-//         println "How long does it take to master build tools?"
-//         println "From the Gradle to the grave."
-//     }
-// }
-
-/*
+ task tellAnotherJoke {
+     doLast {
+         println "How long does it take to master build tools?"
+         println "From the Gradle to the grave."
+     }
+ }
 
 Note that to get Android Studio to recognize this new task, we need to trigger
 a sync between Gradle and Android Studio's internal model of our project. We
