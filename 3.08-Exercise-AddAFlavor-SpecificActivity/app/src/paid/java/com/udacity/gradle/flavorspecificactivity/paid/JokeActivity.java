@@ -1,4 +1,4 @@
-package com.udacity.gradle.flavorspecificactivity;
+package com.udacity.gradle.flavorspecificactivity.paid;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -8,13 +8,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.udacity.gradle.flavorspecificactivity.R;
 
-public class MainActivity extends AppCompatActivity {
+
+public class JokeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_joke);
     }
 
 
