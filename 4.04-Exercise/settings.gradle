@@ -1,0 +1,6 @@
+rootProject.name='MyJavaJokes'
+include ':app'
+include ':jokesmith'
+include ':jokewizard'
+include ':jokesmith'
+include ':myandroidlibrary'
