@@ -1,4 +1,4 @@
-package com.udacity.gradle.flavorspecificactivity.free;
+package com.udacity.gradle.flavorspecificactivity;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -8,7 +8,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import com.udacity.gradle.flavorspecificactivity.R;
 
 public class MainActivity extends AppCompatActivity {
 
