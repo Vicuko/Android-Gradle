@@ -3,7 +3,7 @@
     package="com.example.myandroidlibrary">
 
     <application>
-        <activity android:name=".LibraryActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

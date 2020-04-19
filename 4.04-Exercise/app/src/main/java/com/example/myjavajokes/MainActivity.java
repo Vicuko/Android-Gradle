@@ -9,7 +9,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.jokewizard.JokeWizard;
-import com.example.myandroidlibrary.LibraryActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 JokeWizard joke = new JokeWizard();
                 String jokeText = joke.getJoke();
 
-                Intent intent = new Intent(getBaseContext(), LibraryActivity.class);
+                Intent intent = new Intent(getBaseContext(), com.example.myandroidlibrary.MainActivity.class);
                 intent.putExtra("joke", jokeText);
                 v.getContext().startActivity(intent);
             }
