@@ -20,6 +20,14 @@ The solution to this exercise is essentially Demo 4.05
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        testconfig {
+            storeFile file('/Applications/Android Studio.app/Contents/bin/keystore')
+            storePassword 'password'
+            keyAlias = 'udacity'
+            keyPassword 'password'
+        }
+    }
     compileSdkVersion 24
     buildToolsVersion "24.0.1"
 
@@ -34,6 +42,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.testconfig
         }
     }
 }
