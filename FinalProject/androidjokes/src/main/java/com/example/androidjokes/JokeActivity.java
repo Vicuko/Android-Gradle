@@ -13,6 +13,9 @@ public class JokeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(com.example.androidjokes.R.layout.activity_joke);
 
+        TextView title = findViewById(com.example.androidjokes.R.id.joke_title);
+        title.setText(R.string.jokes_title);
+
         Intent intent = getIntent();
         String intentJoke = intent.getStringExtra("joke");
 
